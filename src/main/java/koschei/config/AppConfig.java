@@ -7,6 +7,7 @@ import koschei.models.Wood3;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan(basePackages = "koschei")
@@ -17,7 +18,7 @@ public class AppConfig {
         return new Island2(wood);
     }
 
-    @Bean("duck")
+    @Bean
     public static Duck5 getEgg(Egg6 egg) {return new Duck5(egg);}
 
 }
